@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# Waste Bin UI usingReact + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+1. Clone the repo
+2. Install dependencies using `npm install` or `yarn`
+3. Run the app using `npm run dev` or `yarn dev`
+4. Create .env file and add your VITE_APP_BASE_URL=""
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- TypeScript
+- React
+- React Query
+- Tailwind CSS
+- Vite
+- Zustand
+- Axios
+- React Router Dom
+- React Icons
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Details
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Typscript was used to create strongly typed code
+- React was used to create the UI
+- React Query was used to fetch data from the API
+- Tailwind CSS was used to style the UI
+- Vite was used to build the app
+- Zustand was used to manage the state of the app(Global State)
+- Axios was used to make API calls
+- React Router Dom was used to handle routing
+- React Icons was used to display icons
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## FEATURES
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Home Page Listing Bins
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  - Select a Bin
+  - Proceed to Check Out
+
+- Check Out Page
+  - showing detsils of the bin
