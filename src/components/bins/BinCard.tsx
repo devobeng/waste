@@ -38,7 +38,9 @@ const BinCard: React.FC<Props> = ({ bin }) => {
         <div className="border border-gray-300 mb-5"></div>
         <div className="flex flex-col lg:flex-row justify-between mb-4">
           <div className="flex align-middle gap-2 mb-4 lg:mb:0">
-            <span className="text-orange-700">{bin.size}</span>
+            <span className="text-orange-700 font-bold">
+              {bin.size} Yard Skip
+            </span>
           </div>
 
           <button

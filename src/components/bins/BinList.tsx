@@ -1,13 +1,13 @@
 import Spinner from "../shared/Spinner";
 import type { BinType } from "../../utils/types";
-import { useSelectBins } from "../../hooks/useSelectBins";
+import { useBins } from "../../hooks/useBins";
 import BinCard from "./BinCard";
 const BinList = () => {
-  const { data, isLoading, error } = useSelectBins("NR32", "Lowestoft");
+  const { data, isLoading, error } = useBins("NR32", "Lowestoft");
   console.log(isLoading);
   console.log(data);
 
-  if (!isLoading)
+  if (isLoading)
     return (
       <div className="text-center text-gray-500">
         <Spinner />
