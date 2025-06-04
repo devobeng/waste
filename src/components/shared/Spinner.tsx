@@ -7,7 +7,7 @@ const Spinner = () => {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
-        width: "100vh",
+        width: "100vw",
       }}
     >
       <img src={loader} alt="loading......." width={150} height={150} />

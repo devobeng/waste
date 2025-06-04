@@ -44,8 +44,9 @@ const BinCard: React.FC<Props> = ({ bin }) => {
           </div>
 
           <button
+            onClick={() => selectbin(bin)}
             className={`h-[38px] px-4 py-2 rounded-md text-center text-sm text-white ${
-              isSelected ? "bg-green-500" : "bg-blue-400 hover:bg-gray-700"
+              isSelected ? "bg-green-500" : "bg-blue-400 hover:bg-blue-800"
             }`}
           >
             {isSelected ? "Selected" : "Select this Skip"}

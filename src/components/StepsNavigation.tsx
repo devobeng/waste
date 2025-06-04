@@ -48,6 +48,9 @@ const StepsNavigation: React.FC<StepsNavigationProps> = ({ currentStep }) => {
                   {step.label}
                 </span>
               </div>
+              {index !== steps.length - 1 && (
+                <div className="h-0.5 w-full bg-gray-600 mx-2" />
+              )}
             </div>
           );
         })}
