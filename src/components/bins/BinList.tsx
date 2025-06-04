@@ -4,8 +4,6 @@ import { useBins } from "../../hooks/useBins";
 import BinCard from "./BinCard";
 const BinList = () => {
   const { data, isLoading, error } = useBins("NR32", "Lowestoft");
-  console.log(isLoading);
-  console.log(data);
 
   if (isLoading)
     return (
